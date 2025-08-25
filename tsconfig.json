@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "esModuleInterop": true,
+    "skipLibCheck": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "useUnknownInCatchVariables": false,
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "*": [
+        "*",
+        "*.js"
+      ],
+      "#model": [
+        "./src/dataAccess/models/user.model.ts"
+      ],
+      "#conectingToDb": [
+        "./src/dataAccess/config/mongo.config.ts"
+      ],
+      "#services/*": [
+        "./src/businessLogic/services/*"
+      ],
+      "#interfaces/*": [
+        "./src/interfaces/*"
+      ],
+      "#controller/*": [
+        "./src/bot/controllers/*"
+      ],
+      "#utils/*": [
+        "./src/bot/utils/*"
+      ],
+      "#cache": [
+        "./src/businessLogic/cache/user.cache.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/packages/lsheet"
+  ]
+}
